@@ -9,7 +9,9 @@ public class TimeCount : MonoBehaviour
 	public Text timerText;
 
 	public float totalTime;
-	int seconds;
+	public static int seconds;
+	bool GameOver = false;
+	public GameObject GameOverObj;
 
 	// Use this for initialization
 	void Start()
@@ -22,10 +24,15 @@ public class TimeCount : MonoBehaviour
 	{
 		totalTime -= Time.deltaTime;
 		seconds = (int)totalTime;
-		timerText.text = seconds.ToString();
-		if(totalTime <= 0)
+        if (!GameOver)
         {
-			SceneManager.LoadScene("TitleScene");
+			timerText.text = seconds.ToString();
+		}
+		if(totalTime <= 0 && !GameOver)
+        {
+			naichilab.RankingLoader.Instance.SendScoreAndShowRanking(ScoreText.score);
+			GameOverObj.SetActive(true);
+			GameOver = true;
 		}
 	}
 }

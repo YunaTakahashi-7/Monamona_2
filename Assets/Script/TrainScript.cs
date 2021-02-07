@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class TrainScript : MonoBehaviour
 {
     public GameObject[] Train;
-    public Text ScoreText;
-    public int score = 0;
+    //public Text ScoreText;
+    //public int score = 0;
 
     private float interval;
     private float time = 0f;
 
     public static int number;
+    bool GameOver = false;
+    public GameObject GameObjectobj;
 
     void Start()
     {
@@ -27,17 +29,26 @@ public class TrainScript : MonoBehaviour
     }
     private void Update()
     {
-        time += Time.deltaTime;
-        if (time > interval)
+        if (!GameOver)
         {
-            MakeObject();
-            time = 0f;
-        }
+            time += Time.deltaTime;
+            if (time > interval)
+            {
+                MakeObject();
+                time = 0f;
+            }
 
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.M))
-        {
-            MakeObject();
-            time = 0f;
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.M))
+            {
+                MakeObject();
+                time = 0f;
+            }
+
+            if(GameObjectobj.activeSelf)
+            {
+                GameOver = true;
+                Debug.Log("おわり");
+            }
         }
     }
 }
