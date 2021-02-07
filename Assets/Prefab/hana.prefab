@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5514493167260807033}
   - component: {fileID: 5514493167260807038}
   - component: {fileID: -7513944119730250796}
+  - component: {fileID: -5076140380210058684}
   m_Layer: 0
   m_Name: hana
   m_TagString: N
@@ -92,5 +93,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30f79c5b81ee242f88eb6649bf563a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5076140380210058684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5514493167260807039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1956c2d1894447f08ad6b136e08501f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

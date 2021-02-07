@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4281915668271100454}
   - component: {fileID: 4281915668271100453}
   - component: {fileID: 8108626860895109614}
+  - component: {fileID: -2417565467135187055}
   m_Layer: 0
   m_Name: mori
   m_TagString: M
@@ -92,5 +93,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30f79c5b81ee242f88eb6649bf563a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2417565467135187055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281915668271100455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1956c2d1894447f08ad6b136e08501f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
