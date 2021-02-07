@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickAnswer : MonoBehaviour
+public class ClickAnswerN : MonoBehaviour
 {
     private float interval;
     private float time = 0f;
@@ -12,16 +12,17 @@ public class ClickAnswer : MonoBehaviour
         interval = 3.0f;
     }
 
-    public void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Destroy(this.gameObject);   
+        }
+        else if (Input.GetKeyDown(KeyCode.N))
         {
             Destroy(this.gameObject);
             Debug.Log("せいかーい");
             ScoreText.score += 100;
-        }else if (Input.GetKeyDown(KeyCode.N))
-        {
-            Destroy(this.gameObject);
         }
         else if (Input.GetKeyDown(KeyCode.M))
         {
@@ -31,7 +32,7 @@ public class ClickAnswer : MonoBehaviour
         time += Time.deltaTime;
         if (time >= interval)
         {
-            Destroy(this.gameObject);            
+            Destroy(this.gameObject);
         }
     }
 }

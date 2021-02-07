@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3025375230639809760}
   - component: {fileID: 3025375230639809775}
-  - component: {fileID: -1566614871501154224}
   - component: {fileID: 8000792974576612425}
   m_Layer: 0
   m_Name: ninzya
@@ -18,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3025375230639809760
 Transform:
   m_ObjectHideFlags: 0
@@ -83,18 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-1566614871501154224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3025375230639809761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30f79c5b81ee242f88eb6649bf563a09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8000792974576612425
 MonoBehaviour:
   m_ObjectHideFlags: 0

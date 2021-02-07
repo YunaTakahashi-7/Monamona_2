@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimeCount : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class TimeCount : MonoBehaviour
 		totalTime -= Time.deltaTime;
 		seconds = (int)totalTime;
 		timerText.text = seconds.ToString();
-
+		if(totalTime == 0)
+        {
+			SceneManager.LoadScene("TitleScene");
+		}
 	}
 }

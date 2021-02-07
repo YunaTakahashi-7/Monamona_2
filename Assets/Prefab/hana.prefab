@@ -10,15 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5514493167260807033}
   - component: {fileID: 5514493167260807038}
-  - component: {fileID: -7513944119730250796}
-  - component: {fileID: -5076140380210058684}
+  - component: {fileID: -8013062027804047345}
   m_Layer: 0
   m_Name: hana
   m_TagString: N
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5514493167260807033
 Transform:
   m_ObjectHideFlags: 0
@@ -83,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-7513944119730250796
+--- !u!114 &-8013062027804047345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,18 +91,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5514493167260807039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30f79c5b81ee242f88eb6649bf563a09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-5076140380210058684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5514493167260807039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1956c2d1894447f08ad6b136e08501f, type: 3}
+  m_Script: {fileID: 11500000, guid: ddc72152bd7524c6390f26e5130096d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
