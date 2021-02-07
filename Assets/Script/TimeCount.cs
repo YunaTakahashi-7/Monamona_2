@@ -23,7 +23,7 @@ public class TimeCount : MonoBehaviour
 		totalTime -= Time.deltaTime;
 		seconds = (int)totalTime;
 		timerText.text = seconds.ToString();
-		if(totalTime == 0)
+		if(totalTime <= 0)
         {
 			SceneManager.LoadScene("TitleScene");
 		}
