@@ -24,7 +24,7 @@ public class TrainScript : MonoBehaviour
     public void MakeObject()
     {
         number = Random.Range(0, Train.Length);
-        Train[number].SetActive(true);
+        //Train[number].SetActive(true);
         Instantiate(Train[number], transform.position, transform.rotation);
     }
     private void Update()
