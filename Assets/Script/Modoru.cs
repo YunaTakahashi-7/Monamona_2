@@ -9,4 +9,16 @@ public class Modoru : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScene");
     }
+    public void OnclickRetry()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
+    public void OnclickRanking()
+    {
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking(ScoreText.score);
+    }
+    public void OnclickGallery()
+    {
+        SceneManager.LoadScene("GalleryScene");
+    }
 }

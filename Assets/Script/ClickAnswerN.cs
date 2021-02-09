@@ -6,6 +6,8 @@ public class ClickAnswerN : MonoBehaviour
 {
     private float interval;
     private float time = 0f;
+    public GameObject Seikou;
+    public GameObject Sippai;
 
     public void Start()
     {
@@ -16,17 +18,19 @@ public class ClickAnswerN : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(this.gameObject);   
+            Destroy(this.gameObject);
+            ClickAnswer.seikou = 0;
         }
         else if (Input.GetKeyDown(KeyCode.N))
         {
             Destroy(this.gameObject);
-            Debug.Log("せいかーい");
+            ClickAnswer.seikou = 1;
             ScoreText.score += 100;
         }
         else if (Input.GetKeyDown(KeyCode.M))
         {
             Destroy(this.gameObject);
+            ClickAnswer.seikou = 0;
         }
 
         time += Time.deltaTime;

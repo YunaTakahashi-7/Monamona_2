@@ -12,6 +12,8 @@ public class TimeCount : MonoBehaviour
 	public static int seconds;
 	bool GameOver = false;
 	public GameObject GameOverObj;
+	public GameObject Seikou;
+	public GameObject Sippai;
 
 	// Use this for initialization
 	void Start()
@@ -30,9 +32,20 @@ public class TimeCount : MonoBehaviour
 		}
 		if(totalTime <= 0 && !GameOver)
         {
-			naichilab.RankingLoader.Instance.SendScoreAndShowRanking(ScoreText.score);
+			SceneManager.LoadScene("ClearScene");
 			GameOverObj.SetActive(true);
 			GameOver = true;
 		}
+
+        if (ClickAnswer.seikou == 1)
+        {
+			Seikou.SetActive(true);
+			Sippai.SetActive(false);
+        }
+        else if(ClickAnswer.seikou == 0)
+        {
+			Seikou.SetActive(false);
+			Sippai.SetActive(true);
+        }
 	}
 }
