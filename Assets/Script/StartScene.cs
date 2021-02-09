@@ -17,10 +17,10 @@ public class StartScene : MonoBehaviour
         RuleImage.SetActive(true);
         ToziruButton.SetActive(true);
     }
-    public void OnClickRankingButton()
-    {
-        //SceneManager.LoadScene("GameScene");
-    }
+    //public void OnClickRankingButton()
+    //{
+    //    //SceneManager.LoadScene("GameScene");
+    //}
     public void OnClickToziruButton()
     {
         RuleImage.SetActive(false);

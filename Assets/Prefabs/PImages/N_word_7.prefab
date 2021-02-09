@@ -95,3 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc72152bd7524c6390f26e5130096d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Seikou: {fileID: 1027964943106517579, guid: 61980b512ffda43758bd4ecc1c29438f, type: 3}
+  Sippai: {fileID: 7375828064437479390, guid: c0e4698b9d75e4d8fa7d067889698d65, type: 3}

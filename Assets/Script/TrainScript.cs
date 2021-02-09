@@ -18,7 +18,7 @@ public class TrainScript : MonoBehaviour
 
     void Start()
     {
-        interval = 2.0f;
+        interval = 3.0f;
         MakeObject();
     }
     public void MakeObject()
