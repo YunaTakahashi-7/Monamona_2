@@ -17,4 +17,8 @@ public class Modoru : MonoBehaviour
     {
         naichilab.RankingLoader.Instance.SendScoreAndShowRanking(ScoreText.score);
     }
+    public void OnclickGallery()
+    {
+        SceneManager.LoadScene("GalleryScene");
+    }
 }

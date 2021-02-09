@@ -10,6 +10,7 @@ public class StartScene : MonoBehaviour
 
     public void OnClickStartButton()
     {
+        ScoreText.score = 0;
         SceneManager.LoadScene("GameScene");
     }
     public void OnClickRuleButton()
