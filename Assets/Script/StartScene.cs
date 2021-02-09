@@ -11,6 +11,7 @@ public class StartScene : MonoBehaviour
     public void OnClickStartButton()
     {
         ScoreText.score = 0;
+        ClickAnswer.seikou = 2;
         SceneManager.LoadScene("GameScene");
     }
     public void OnClickRuleButton()
@@ -18,10 +19,7 @@ public class StartScene : MonoBehaviour
         RuleImage.SetActive(true);
         ToziruButton.SetActive(true);
     }
-    //public void OnClickRankingButton()
-    //{
-    //    //SceneManager.LoadScene("GameScene");
-    //}
+    
     public void OnClickToziruButton()
     {
         RuleImage.SetActive(false);

@@ -6,13 +6,31 @@ public class ClickAnswer : MonoBehaviour
 {
     private float interval;
     private float time = 0f;
-    public GameObject Seikou;
-    public GameObject Sippai;
     public static int seikou = 2;
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip SeikaiSE;
+    public AudioClip SippaiSE;
 
     public void Start()
     {
         interval = 3.0f;
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void Awake()
+    {
+        if (seikou == 1)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.PlayOneShot(SeikaiSE);
+        }
+        else if (seikou == 0)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.PlayOneShot(SippaiSE);
+        }
     }
 
     public void Update()
