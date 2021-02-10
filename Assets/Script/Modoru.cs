@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Modoru : MonoBehaviour
 {
-    public void OnclickModoru()
+    public void OnclickTitle()
     {
         SceneManager.LoadScene("TitleScene");
     }
     public void OnclickRetry()
     {
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("GameScene");
     }
     public void OnclickRanking()
     {
