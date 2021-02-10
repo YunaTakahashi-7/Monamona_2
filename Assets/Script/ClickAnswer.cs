@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClickAnswer : MonoBehaviour
 {
-    private float interval;
+    private float interval =3.0f;
     private float time = 0f;
     public static int seikou = 2;
     private AudioSource audioSource;
@@ -15,21 +15,21 @@ public class ClickAnswer : MonoBehaviour
 
     public void Start()
     {
-        interval = 3.0f;
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    public void Awake()
-    {
         if (seikou == 1)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.PlayOneShot(SeikaiSE);
+            //Debug.Log("A");
         }
         else if (seikou == 0)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.PlayOneShot(SippaiSE);
+            //Debug.Log("B");
+        }
+        else
+        {
+            Debug.Log("C");
         }
     }
 
@@ -37,23 +37,25 @@ public class ClickAnswer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(this.gameObject);
-            seikou = 1;        
+            seikou = 1;
             ScoreText.score += 100;
+            Destroy(this.gameObject);
         }else if (Input.GetKeyDown(KeyCode.N))
         {
             seikou = 0;
-            Destroy(this.gameObject);      
+            Destroy(this.gameObject);
+           
         }
         else if (Input.GetKeyDown(KeyCode.M))
         {
-            Destroy(this.gameObject);
-            seikou = 0;        
+            seikou = 0;
+            Destroy(this.gameObject);         
         }
 
         time += Time.deltaTime;
         if (time >= interval)
         {
+            seikou = 0;
             Destroy(this.gameObject);            
         }
     }

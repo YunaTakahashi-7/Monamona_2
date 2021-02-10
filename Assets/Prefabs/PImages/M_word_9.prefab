@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4095515217872924556}
   - component: {fileID: 6821450668240526110}
-  - component: {fileID: -260904390587048422}
+  - component: {fileID: 3194807698673591851}
   m_Layer: 0
   m_Name: M_word_9
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-260904390587048422
+--- !u!114 &3194807698673591851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b298084bd86a4bb1bb4514219de3579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Seikou: {fileID: 1027964943106517579, guid: 61980b512ffda43758bd4ecc1c29438f, type: 3}
-  Sippai: {fileID: 7375828064437479390, guid: c0e4698b9d75e4d8fa7d067889698d65, type: 3}
-  SeikaiSE: {fileID: 8300000, guid: a031b2a9aee384b0c8074e7cf984b0fe, type: 3}
-  SippaiSE: {fileID: 8300000, guid: 4da6efc0f329f4fe0b0ea8bf694f204d, type: 3}
+  SeikaiSE: {fileID: 8300000, guid: f6c5100b3687951488721a56ed0a6a54, type: 3}
+  SippaiSE: {fileID: 8300000, guid: a8790fe7c6e591d4887fee519f6d5900, type: 3}

@@ -12,6 +12,7 @@ public class Modoru : MonoBehaviour
     public void OnclickRetry()
     {
         SceneManager.LoadScene("GameScene");
+        ClickAnswer.seikou = 2;
     }
     public void OnclickRanking()
     {

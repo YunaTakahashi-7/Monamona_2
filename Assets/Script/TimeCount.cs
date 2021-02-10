@@ -42,10 +42,15 @@ public class TimeCount : MonoBehaviour
 			Seikou.SetActive(true);
 			Sippai.SetActive(false);
         }
-        else if(ClickAnswer.seikou == 0)
-        {
+        else if (ClickAnswer.seikou == 0)
+		{
 			Seikou.SetActive(false);
 			Sippai.SetActive(true);
         }
+        else
+        {
+			Seikou.SetActive(false);
+			Sippai.SetActive(false);
+		}
 	}
 }

@@ -4,22 +4,14 @@ using UnityEngine;
 
 public class ClickAnswerN : MonoBehaviour
 {
-    private float interval;
+    private float interval = 3.0f;
     private float time = 0f;
-    public GameObject Seikou;
-    public GameObject Sippai;
     private AudioSource audioSource;
     [SerializeField]
     private AudioClip SeikaiSE;
     public AudioClip SippaiSE;
 
     public void Start()
-    {
-        interval = 3.0f;
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    public void Awake()
     {
         if (ClickAnswer.seikou == 1)
         {
@@ -31,30 +23,42 @@ public class ClickAnswerN : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.PlayOneShot(SippaiSE);
         }
+        else
+        {
+            Debug.Log("C");
+        }
     }
+
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(this.gameObject);
+          
             ClickAnswer.seikou = 0;
+            Destroy(this.gameObject);
+            
         }
         else if (Input.GetKeyDown(KeyCode.N))
         {
-            Destroy(this.gameObject);
+            
             ClickAnswer.seikou = 1;
             ScoreText.score += 100;
+            Destroy(this.gameObject);
+            
         }
         else if (Input.GetKeyDown(KeyCode.M))
         {
-            Destroy(this.gameObject);
+         
             ClickAnswer.seikou = 0;
+            Destroy(this.gameObject);
+            
         }
 
         time += Time.deltaTime;
         if (time >= interval)
         {
+            ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
         }
     }
