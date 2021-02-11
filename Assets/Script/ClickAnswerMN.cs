@@ -17,14 +17,16 @@ public class ClickAnswerMN : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.PlayOneShot(SeikaiSE);
+            Debug.Log("A_MN");
         }
         else if (ClickAnswer.seikou == 0)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.PlayOneShot(SippaiSE);
+            Debug.Log("B_MN");
         }
         else{
-            Debug.Log("C");
+            Debug.Log("C_MN");
         }
     }
 
@@ -32,7 +34,7 @@ public class ClickAnswerMN : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
             
@@ -40,14 +42,14 @@ public class ClickAnswerMN : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.N))
         {
             ClickAnswer.seikou = 1;
-            ScoreText.score += 100;
+            ScoreText.score += 200;
             Destroy(this.gameObject);
             
         }
         else if (Input.GetKeyDown(KeyCode.M))
         {
             ClickAnswer.seikou = 1;
-            ScoreText.score += 100;
+            ScoreText.score += 200;
             Destroy(this.gameObject);
            
         }
@@ -55,6 +57,7 @@ public class ClickAnswerMN : MonoBehaviour
         time += Time.deltaTime;
         if (time >= interval)
         {
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
         }

@@ -95,5 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd332f94de9c0475c919f7c8653e05a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SeikaiSE: {fileID: 8300000, guid: 92a0a241bc34b7d458722f49ddc35802, type: 3}
-  SippaiSE: {fileID: 8300000, guid: f6c5100b3687951488721a56ed0a6a54, type: 3}
+  SeikaiSE: {fileID: 8300000, guid: f6c5100b3687951488721a56ed0a6a54, type: 3}
+  SippaiSE: {fileID: 8300000, guid: a8790fe7c6e591d4887fee519f6d5900, type: 3}
