@@ -13,6 +13,8 @@ public class Gallery : MonoBehaviour
     public GameObject page3text;
     public GameObject page4;
     public GameObject page4text;
+    public GameObject page5;
+    public GameObject page5text;
     public GameObject YazirushiL;
 
     void Start()
@@ -54,8 +56,15 @@ public class Gallery : MonoBehaviour
         {
             page4.SetActive(false);
             page4text.SetActive(false);
+            page5.SetActive(true);
+            page5text.SetActive(true); 
+        }
+        else if (page5.activeSelf)
+        {
+            page5.SetActive(false);
+            page5text.SetActive(false);
             page1.SetActive(true);
-            page1text.SetActive(true); 
+            page1text.SetActive(true);
         }
     }
 
@@ -65,8 +74,8 @@ public class Gallery : MonoBehaviour
         {
             page1.SetActive(false);
             page1text.SetActive(false);
-            page4.SetActive(true);
-            page4text.SetActive(true);   
+            page5.SetActive(true);
+            page5text.SetActive(true);   
         }
         else if (page2.activeSelf)
         {
@@ -88,6 +97,13 @@ public class Gallery : MonoBehaviour
             page4text.SetActive(false);
             page3.SetActive(true);
             page3text.SetActive(true);
+        }
+        else if (page5.activeSelf)
+        {
+            page5.SetActive(false);
+            page5text.SetActive(false);
+            page4.SetActive(true);
+            page4text.SetActive(true);
         }
     }
 
