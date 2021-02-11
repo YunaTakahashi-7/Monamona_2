@@ -27,7 +27,7 @@ public class ClickAnswerM : MonoBehaviour
         }
         else
         {
-            Debug.Log("C");
+            Debug.Log("C_M");
         }
     }
 
@@ -35,27 +35,28 @@ public class ClickAnswerM : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-           
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject); 
         }
         else if (Input.GetKeyDown(KeyCode.N))
         {
-           
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
         }
-        else if (Input.GetKeyDown(KeyCode.M))
+        else if (Input.GetKeyDown(KeyCode.M))  //正解
         {
             
             ClickAnswer.seikou = 1;
-            ScoreText.score += 100;
+            ScoreText.score += 200;
             Destroy(this.gameObject);  
         }
 
         time += Time.deltaTime;
         if (time >= interval)
         {
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
         }

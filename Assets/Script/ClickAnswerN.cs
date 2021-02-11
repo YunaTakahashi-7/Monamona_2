@@ -25,7 +25,7 @@ public class ClickAnswerN : MonoBehaviour
         }
         else
         {
-            Debug.Log("C");
+            Debug.Log("C_N");
         }
     }
 
@@ -34,7 +34,7 @@ public class ClickAnswerN : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-          
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
             
@@ -43,13 +43,13 @@ public class ClickAnswerN : MonoBehaviour
         {
             
             ClickAnswer.seikou = 1;
-            ScoreText.score += 100;
+            ScoreText.score += 200;
             Destroy(this.gameObject);
             
         }
         else if (Input.GetKeyDown(KeyCode.M))
         {
-         
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
             
@@ -58,6 +58,7 @@ public class ClickAnswerN : MonoBehaviour
         time += Time.deltaTime;
         if (time >= interval)
         {
+            ScoreText.score -= 100;
             ClickAnswer.seikou = 0;
             Destroy(this.gameObject);
         }
